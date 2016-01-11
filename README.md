@@ -15,7 +15,7 @@ Nucleo F401RE の bin ファイルを転送するプログラム。
 現在のディレクトリで最初に見つかった `.bin` ファイルを転送します。
 
 ```
-> CopyNucleoBinary <ファイル名>.bin
+> CopyNucleoBinary Nucleo-F401RE.bin
 ```
 指定したファイルを転送します。
 
