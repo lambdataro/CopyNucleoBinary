@@ -71,9 +71,9 @@ namespace CopyNucleoBinary
             var current = Directory.GetCurrentDirectory();
             var path = Directory.GetFiles(current, "*.bin", SearchOption.AllDirectories).FirstOrDefault();
 
-            if (path == "")
+            if (path == null)
             {
-                throw new ApplicationException("バイナリファイルが見つからない");
+                throw new ApplicationException("バイナリファイルが見つかりません");
             }
 
             return path;
@@ -99,7 +99,7 @@ namespace CopyNucleoBinary
                 Select(drive => drive.Name).
                 FirstOrDefault();
 
-            if (path == "")
+            if (path == null)
             {
                 throw new ApplicationException("MPUが接続されていません");
             }
