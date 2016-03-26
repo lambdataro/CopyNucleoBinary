@@ -1,8 +1,5 @@
-# CopyNucleoBinary
+﻿# CopyNucleoBinary
 Nucleo F401RE の bin ファイルを転送するプログラム。
-
-## 必要なソフトウェア
-- MSYS (cp コマンドを利用)
 
 ## 対応ボード
 - Nucleo F401RE
