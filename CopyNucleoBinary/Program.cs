@@ -48,8 +48,8 @@ namespace CopyNucleoBinary
         {
             Console.WriteLine("\"{0}\" => \"{1}\"", Path.GetFileName(srcPath), dstPath);
 
-            var info = new ProcessStartInfo("cp");
-            info.Arguments = String.Format("\"{0}\" \"{1}\"", srcPath, dstPath);
+            var info = new ProcessStartInfo("cmd");
+            info.Arguments = String.Format("/c copy \"{0}\" \"{1}\"", srcPath, dstPath);
             info.UseShellExecute = false;
             info.CreateNoWindow = true;
             using (var proc = new Process())
